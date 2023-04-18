@@ -1,0 +1,149 @@
+.footer {
+    background: var(--background-publ-color);
+    padding-bottom: 30px;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hl {
+        border: 2px solid var(--marker-color);
+        width: 1600px;
+        margin-bottom: 30px;
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-map::before,
+    &__item-tel::before,
+    &__item-tel::after {
+        content: '';
+        display: inline-block;
+        border-radius: 50%;
+        height: 6px;
+        width: 6px;
+        background-color: var(--title-offer-color);
+        margin-right: 10px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__icon {
+        height: 38px;
+        width: 38px;
+        fill: var(--arrow-title-color);
+    }
+
+    &__icon:hover,
+    &__icon:focus {
+        fill: var(--hover-color);
+    }
+
+    &__link {
+        text-decoration: none;
+        line-height: 1.25;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        text-decoration: 2px underline;
+    }
+
+    &__desc {
+        line-height: 1.25;
+        color: var(--title-offer-color);
+        margin: 0;
+    }
+
+    .mail {
+        font-weight: 700;
+        color: var(--arrow-title-color);
+    }
+
+    .mail:hover,
+    .mail:focus {
+        color: var(--hover-color);
+        text-decoration: none;
+    }
+
+    .map {
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--arrow-title-color);
+    }
+
+    .map:hover,
+    .map:focus {
+        color: var(--hover-color);
+        text-decoration: none;
+    }
+
+    .address {
+        color: var(--title-clients-color);
+        margin-right: 10px;
+    }
+
+    .tel {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--tel-footer-color);
+        margin-right: 10px;
+    }
+
+    .facebook {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .footer {
+        .hl {
+            width: 1320px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        .hl {
+            width: 904px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        .hl {
+            width: 648px;
+        }
+
+        &__desc {
+            width: 276px;
+        }
+
+        &__list {
+            width: 398px;
+        }
+        &__address {
+            width: 281px;
+        }
+    }
+}

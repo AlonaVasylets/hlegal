@@ -1,0 +1,114 @@
+.offer {
+    display: flex;
+    align-items: center;
+    padding-left: calc(50vw - 680px);
+    padding-right: calc(50vw - 680px);
+    padding-top: 60px;
+    background: #323264;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        gap: 30px;
+        list-style: none;
+        align-items: flex-end;
+        max-width: 375px;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item:first-child {
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        color: var(--title-offer-color);
+        font-size: 36px;
+        line-height: 1.21;
+    }
+
+    &__title:hover,
+    &__title:focus {
+        color: var(--hover-color);
+    }
+
+    .vl {
+        border: 3px solid var(--vl-color);
+        height: 303px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    &__block-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 861px;
+    }
+
+    &__caption {
+        font-size: 30px;
+        line-height: 1.23;
+        margin: 0 0 30px;
+    }
+
+    &__desc {
+        font-size: 19px;
+        line-height: 1.578;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .offer {
+        padding-left: calc(50vw - 540px);
+    padding-right: calc(50vw - 540px);
+    &__block-desc {
+        max-width: 581px;
+    }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .offer {
+        padding-left: calc(50vw - 452px);
+        padding-right: calc(50vw - 452px);
+    &__block-desc {
+        max-width: 405px;
+    }
+    }
+}
+@media screen and (max-width: 768px) {
+    .offer {
+        padding-left: calc(50vw - 324px);
+        padding-right: calc(50vw - 324px);
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+        &__list {
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 60px;
+            overflow: scroll;
+            max-width: 678px;
+        }
+        &__title {
+            white-space: nowrap;
+        }
+        &__block-desc {
+            max-width: 648px;
+        }
+        .vl {
+            width: 648px;
+            height: 4px;
+            margin: 0 0 60px 0;
+        }
+    }
+}

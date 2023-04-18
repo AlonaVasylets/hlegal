@@ -1,0 +1,65 @@
+.hero {
+    padding-top: 477px;
+    padding-bottom: 30px;
+    background-image: url(../img/symbol.png);
+    background-position: center;
+    background-repeat: no-repeat;
+background-color: #323264;
+height: 1000px;
+
+    &__title-main {
+        text-align: center;
+        font-size: 38px;
+        line-height: 1.21;
+        margin: 0 0 405px;
+    }
+    &__link-icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    &__icon {
+        box-sizing: content-box;
+        height: 9px;
+        width: 18px;
+        border-radius: 50%;
+        border: 2px solid var(--main-text-color);
+        padding: 18px 12px 15px 12px;
+        stroke: var(--main-text-color);
+    }
+    &__icon:hover,
+    &__icon:focus {
+        stroke: var(--hover-color);
+        border: 2px solid var(--hover-color);
+    }
+   
+}
+@media screen and (max-width: 1440px) {
+    .hero {
+        padding-top: 376px;
+        height: 800px;
+        background-size: 697px 799px;
+        &__title-main {
+            margin: 0 0 305px;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .hero {
+        padding-top: 361px;
+        height: 768px;
+        background-size: 670px 768px;
+        &__title-main {
+            margin: 0 0 289px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 1024px;
+        background-size: 768px 1024px;
+        &__title-main {
+            margin: 128px 0 417px;
+        }
+    }
+}
