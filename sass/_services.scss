@@ -1,50 +1,48 @@
 .services {
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-border-radius: 0px 0px 12px 12px;
-padding-top: 60px;
-padding-bottom: 60px;
-&__container {
-    display: grid;
-    grid-template-columns: repeat(3, 493px);
-    gap: 60px;
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        margin-top: 60px;
+    }
+
+    &__caption:hover,
+    &__caption:focus {
+        color: var(--hover-color);
+    }
+
+    &__caption {
+        font-size: 22px;
+        line-height: 1.227;
+        color: var(--arrow-title-color);
+        margin: 30px 0 15px 0;
+    }
+
+    &__text {
+        line-height: 1.625;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
-&__caption:hover,
-&__caption:focus {
-color: var(--hover-color);
-}
-&__caption {
-    font-size: 22px;
-line-height: 1.227;
-color: var(--arrow-title-color);
-margin: 30px 0 15px 0;
-}
-&__text {
-    line-height: 1.625;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-}
-}
-@media screen and (max-width: 1440px) {
+
+@media screen and (max-width: 860px) {
     .services {
         &__container {
-            grid-template-columns: repeat(3, 400px);
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 550px) {
     .services {
         &__container {
-            grid-template-columns: repeat(3, 261px);
-        }
-    }
-}
-@media screen and (max-width: 768px) {
-    .services {
-        &__container {
-            grid-template-columns: repeat(2, 294px);
+            grid-template-columns: 1fr;
         }
     }
 }

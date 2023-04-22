@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header header__services-page center">
+        <div class="header__logo header__services-page_logo">
+            <a class="header__link" href="index.html">
+                <img src="img/logo-services.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="header__lang-adress header__services-page_lang-adress">
+            <ul class="header__lang-list">
+                <li class="header__lang-item"><a class="header__lang-link" href="#">УК</a></li>
+                <li class="header__lang-item"><a class="header__lang-link" href="#">РУ</a></li>
+                <li class="header__lang-item"><a class="header__lang-link" href="#">EN</a></li>
+            </ul>
+            <ul class="header__adress-list">
+                <li class="header__adress-item"><a class="header__adress-link" href="#">Kyiv, Mechnikova str,
+                        14/1</a></li>
+                <li class="header__adress-item"><a class="header__adress-link tel" href="tel:+0800211927">0800 211
+                        927</a></li>
+                <li class="header__adress-item"><a class="header__adress-link" href="#">
+                        <svg class="header__icon">
+                            <use xlink:href="img/sprite.svg#facebook-header"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+        <input id="nav-toggler" type="checkbox" class="visually-hidden">
+        <label for="nav-toggler" class="nav-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="header__nav header__services-page_nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="about.html">about us</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header__services-page_nav-link curent"
+                        href="services.html">services</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="team.html">team</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="publications.html">publications</a>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gradient">
+            <section class="services services-page service-page">
+                <article class="services__box service-page__box">
+                    <a href="#">
+                        <img src="img/icon1.svg" alt="bag">
+                    </a>
+                    <a href="#">
+                        <h3 class="services__caption service-page__caption curent">IT and e-commerce</h3>
+                    </a>
+                    <p class="services__text service-page__text">An endless stream of contracts, tax issues, labor
+                        relations, corporate
+                        papers - legal work
+                        distracts you from doing business. But there is not much work to do to hire an in-house lawyer.
+                    </p>
+                    <p class="services__text service-page__text">In addition, over time, the work will become the same
+                        type and uninteresting for a full-time lawyer.
+                        And we know very well how difficult it is to find a good candidate with experience in the field
+                        of
+                        information technology in Ukraine.</p>
+                    <button id="open-form-modal-btn" type="button" class="service-page__button">Free
+                        consultation</button>
+                </article>
+
+                <div class="modal-bgd" id="form-modal">
+                    <div class="modal-form-container">
+                        <button class="close-btn">x</button>
+                        <form action="#" class="modal-form" data-netlify="true" id="form">
+                            <h1 class="under__title under__title-modal">We would like to help you</h1>
+                            <input class="modal-field-input" type="text" required name="name" placeholder="Name">
+                            <textarea class="modal-field-input modal-field-input_textarea" name="message"
+                                placeholder="Message"></textarea>
+                            <h2 class="modal-form__title">How to answer you?</h2>
+                            <input class="modal-field-input" type="tel" name="tel" placeholder="Phone number" required>
+                            <input class="modal-field-input" type="email" required name="email" placeholder="Email">
+                            <button class="service-page__button send-btn" type="submit" id="launch-btn">Send
+                                message</button>
+                        </form>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+                <script src="/scripts/form.js"></script>
+
+                <section class="service-page__about">
+                    <div class="hl service-page__hl"></div>
+                    <h4 class="service-page__title">Services in this area:</h4>
+                    <div class="service-page__block">
+                        <ul class="service-page__list">
+                            <li class="service-page__item">support of investment projects for the development of port
+                                infrastructure;</li>
+                            <li class="service-page__item">certification of GTS, entering information about them in
+                                mandatory
+                                databases and registers;</li>
+                            <li class="service-page__item">registration of permits for the construction of port
+                                terminals;</li>
+                            <li class="service-page__item">registration of permit and other mandatory documentation
+                                required for
+                                carrying out activities in the port (emission permit, conclusion on EIA, RTC, etc.);
+                            </li>
+                        </ul>
+                        <ul class="service-page__list">
+                            <li class="service-page__item">support of procedures related to the lease of state property
+                                in the
+                                port;</li>
+                            <li class="service-page__item">support of procedures related to confirmation of the status
+                                of port
+                                operator, maritime agent, foreign sailing line;</li>
+                            <li class="service-page__item">support of procedures related to the inclusion of the company
+                                within
+                                the port;</li>
+                            <li class="service-page__item">appeals against actions related to the illegal imposition of
+                                services
+                                in the port by monopoly companies.</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="shadow-first"></div>
+        <div class="shadow-second service-page__shadow-second"></div>
+        <section class="publications service-page__publications center">
+            <div class="under__block">
+                <a class="under__link" href="services.html">
+                    Publications
+                    <svg class="under__icon">
+                        <use xlink:href="img/sprite.svg#arrow-blue"></use>
+                    </svg>
+                </a>
+                <h2 class="under__title">Recommended</h2>
+            </div>
+            <ul class="publications__list">
+                <li class="publications__item">
+                    <img src="img/cover.jpg" alt="planshet">
+                    <h4 class="publications__title">Equity associate</h4>
+                    <p class="publications__date">April 22</p>
+                    <div class="hl"></div>
+                    <p class="publications__desc">I'm a jun on projects. I am a co-owner of a law firm. How it happened.
+                        Before entering my parents told me that if I…</p>
+                </li>
+                <li class="publications__item">
+                    <img src="img/cover2.jpg" alt="planshet">
+                    <h4 class="publications__title">Penalty for the Good Corporation: what will happen to Google and
+                        others for violating the GDPR</h4>
+                    <p class="publications__date">September 29</p>
+                    <div class="hl"></div>
+                    <p class="publications__desc">And why the recovery of 50 million euros could be a fateful precedent
+                        According to Mind.ua January 21 National Commission for Data Protection.</p>
+                </li>
+                <li class="publications__item">
+                    <img src="img/cover3.jpg" alt="planshet">
+                    <h4 class="publications__title">Millennial Testament</h4>
+                    <p class="publications__date">August 19</p>
+                    <div class="hl"></div>
+                    <p class="publications__desc">What and how modern vloggers, opinion leaders and crypto-millionaires
+                        will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer footer__services-page center">
+        <div class="hl footer__services-page_line"></div>
+        <div class="footer__block footer__services-page_block">
+            <section class="footer__address footer__services-page_address">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link address" href="#">Kyiv, Mechnikova str, 14/1</a>
+                    </li>
+                    <li class="footer__item footer__item-map"><a class="footer__link map" href="#">On map</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link facebook" href="#">
+                            <svg class="footer__icon">
+                                <use xlink:href="img/sprite.svg#facebook-header"></use>
+                            </svg>
+                        </a></li>
+                    <li class="footer__item footer__item-tel"><a class="footer__link tel" href="tel:+0800211927">0800
+                            211
+                            927</a></li>
+                    <li class="footer__item footer__item-mail"><a class="footer__link mail"
+                            href="mailto:contact@forstudy.space">contact@forstudy.space</a></li>
+                </ul>
+            </section>
+            <div class="footer__services-page_text">
+                <p class="footer__desc footer__services-page_desc">© 2021 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

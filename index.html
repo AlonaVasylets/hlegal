@@ -15,56 +15,57 @@
 
 <body>
     <header class="header center">
-        <a class="header__link" href="#">
-            <img src="img/logo.svg" alt="Logo">
-        </a>
-        <section class="header__block">
-            <div class="header__lang-adress">
-                <ul class="header__lang-list">
-                    <li class="header__lang-item"><a class="header__lang-link" href="#">УК</a></li>
-                    <li class="header__lang-item"><a class="header__lang-link" href="#">РУ</a></li>
-                    <li class="header__lang-item"><a class="header__lang-link" href="#">EN</a></li>
-                </ul>
-                <ul class="header__adress-list">
-                    <li class="header__adress-item"><a class="header__adress-link" href="#">Kyiv, Mechnikova str,
-                            14/1</a></li>
-                    <li class="header__adress-item"><a class="header__adress-link tel" href="tel:+0800211927">0800 211
-                            927</a></li>
-                    <li class="header__adress-item"><a class="header__adress-link" href="#">
-                            <svg class="header__icon">
-                                <use xlink:href="img/sprite.svg#facebook-header"></use>
-                            </svg>
-                        </a></li>
-                </ul>
-            </div>
-            <input id="nav-toggler" type="checkbox" class="visually-hidden">
-            <label for="nav-toggler" class="nav-toggler">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <div class="header__logo">
+            <a class="header__link" href="#">
+                <img src="img/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="header__lang-adress">
+            <ul class="header__lang-list">
+                <li class="header__lang-item"><a class="header__lang-link" href="#">УК</a></li>
+                <li class="header__lang-item"><a class="header__lang-link" href="#">РУ</a></li>
+                <li class="header__lang-item"><a class="header__lang-link" href="#">EN</a></li>
+            </ul>
+            <ul class="header__adress-list">
+                <li class="header__adress-item"><a class="header__adress-link" href="#">Kyiv, Mechnikova str,
+                        14/1</a></li>
+                <li class="header__adress-item"><a class="header__adress-link tel" href="tel:+0800211927">0800 211
+                        927</a></li>
+                <li class="header__adress-item"><a class="header__adress-link" href="#">
+                        <svg class="header__icon">
+                            <use xlink:href="img/sprite.svg#facebook-header"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+        <input id="nav-toggler" type="checkbox" class="visually-hidden">
+        <label for="nav-toggler" class="nav-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a class="header__nav-link" href="about.html">about us</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="services.html">services</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="team.html">team</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="publications.html">publications</a>
-                    </li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="contact.html">contact</a></li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="about.html">about us</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="services.html">services</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="team.html">team</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="publications.html">publications</a>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="contact.html">contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1 class="hero__title-main">you legal solutions provider</h1>
-            <a class="hero__link-icon" href="#">
-                <svg class="hero__icon">
-                    <use xlink:href="img/sprite.svg#arrow-down"></use>
-                </svg>
-            </a>
-        </section>
+        <div class="gradient">
+            <section class="hero center">
+                <h1 class="hero__title-main">you legal solutions provider</h1>
+                <a class="hero__link-icon" href="#">
+                    <svg class="hero__icon">
+                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                </a>
+            </section>
 
             <section class="offer">
                 <ul class="offer__list">
@@ -90,111 +91,164 @@
                         applying the law of the sea in Ukraine.</p>
                 </div>
             </section>
-        
 
-        <section class="services center">
-            <div class="under__block">
-                <a class="under__link" href="services.html">
-                    Services
-                    <svg class="under__icon">
-                        <use xlink:href="img/sprite.svg#arrow-blue"></use>
-                    </svg>
-                </a>
-                <h2 class="under__title">What can we do better than others?</h2>
-            </div>
-            <section class="services__container">
-                <article class="services__box">
-                    <a href="#">
-                        <img src="img/icon1.svg" alt="bag">
-                    </a>
-                    <a href="#"><h3 class="services__caption">IT and e-commerce</h3></a>
-                    <p class="services__text">An endless stream of contracts, tax issues, labor relations, corporate
-                        papers - legal work
-                        distracts you from doing business. But there is not much work to do to hire an in-house lawyer.
-                    </p>
-                </article>
-                <article class="services__box">
-                    <a href="#">
-                        <img src="img/icon2.svg" alt="briefcace">
-                    </a>
-                    <a href="#"><h3 class="services__caption">Comprehensive daily
-                        legal support</h3></a>
-                    <p class="services__text">In addition, over time, the work will become the same type and
-                        uninteresting for a full-time
-                        lawyer. And we know very well how difficult it is to find a good candidate with experience in
-                        the field of information technology in Ukraine.
-                    </p>
-                </article>
-                <article class="services__box">
-                    <a href="#">
-                        <img src="img/icon3.svg" alt="flake">
-                    </a>
-                    <a href="#"><h3 class="services__caption">Structuring corporate relationships</h3></a>
-                    <p class="services__text">Instead of just providing legal services, we will hire a lawyer or a whole
-                        team that will fit
-                        into the daily life of your company.
-                    </p>
-                </article>
-                <article class="services__box">
-                    <a href="#">
-                        <img src="img/icon4.svg" alt="hands">
-                    </a>
-                    <a href="#"><h3 class="services__caption">Building contractual relations</h3></a>
-                    <p class="services__text">Once a week, or week after month, you have your own lawyer by your side.
-                        Anyone in the company
-                        can catch it at the coffee maker and just talk about current affairs instead of waiting for
-                        update status.
-                    </p>
-                </article>
-                <article class="services__box">
-                    <a href="#">
-                        <img src="img/icon5.svg" alt="shield">
-                    </a>
-                    <a href="#"><h3 class="services__caption">Protection of business, intellectual property</h3></a>
-                    <p class="services__text">And all the other time he will work on new diverse projects, so he will
-                        definitely not stop in
-                        professional development. One way or another, all Axon Partners will work for you instead of a
-                        corporate lawyer.
-                    </p>
-                </article>
-                <article class="services__box">
-                    <a href="#">
-                        <img src="img/icon6.svg" alt="hammer">
-                    </a>
-                    <a href="#"><h3 class="services__caption">Judicial representation</h3></a>
-                    <p class="services__text">Is it a small, medium-sized company or a market leader? Local business or
-                        multinational company?
-                        Do you have your own legal department or not?</p>
-                </article>
-            </section>
-        </section>
 
-        <section class="team center">
-            <div class="slider">
-                    <div class="slider__list">
-                        <article class="slider__item slider__item_active">
-                            <div class="slider__photo"><img src="img/image.jpg" alt="Alex"></div>
-                            <div class="slider__content">
-                        <a class="under__link" href="services.html">
-                            команда
-                            <svg class="under__icon">
-                                <use xlink:href="img/sprite.svg#arrow-blue"></use>
-                            </svg>
-                        </a>
-                        <h2 class="under__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну
-                            допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
-                        <h4 class="slider__title">Олександр Олександровський</h4>
-                        <p class="slider__desc">Керуючий партнер</p>
-                    </div>
-                    </article>
-                    </div>	
-                    <div class="slider__click">
-                        <button class="slider__btn"></button>
-                        <button class="slider__btn"></button>
-                        <button class="slider__btn"></button>
-                    </div>
+            <section class="services center">
+                <div class="under__block">
+                    <a class="under__link" href="services.html">
+                        Services
+                        <svg class="under__icon">
+                            <use xlink:href="img/sprite.svg#arrow-blue"></use>
+                        </svg>
+                    </a>
+                    <h2 class="under__title">What can we do better than others?</h2>
                 </div>
-        </section>
+                <section class="services__container">
+                    <article class="services__box">
+                        <a href="service-e-p.html">
+                            <img src="img/icon1.svg" alt="bag">
+                        </a>
+                        <a href="service-e-p.html">
+                            <h3 class="services__caption">IT and e-commerce</h3>
+                        </a>
+                        <p class="services__text">An endless stream of contracts, tax issues, labor relations, corporate
+                            papers - legal work
+                            distracts you from doing business. But there is not much work to do to hire an in-house
+                            lawyer.
+                        </p>
+                    </article>
+                    <article class="services__box">
+                        <a href="#">
+                            <img src="img/icon2.svg" alt="briefcace">
+                        </a>
+                        <a href="#">
+                            <h3 class="services__caption">Comprehensive daily
+                                legal support</h3>
+                        </a>
+                        <p class="services__text">In addition, over time, the work will become the same type and
+                            uninteresting for a full-time
+                            lawyer. And we know very well how difficult it is to find a good candidate with experience
+                            in
+                            the field of information technology in Ukraine.
+                        </p>
+                    </article>
+                    <article class="services__box">
+                        <a href="#">
+                            <img src="img/icon3.svg" alt="flake">
+                        </a>
+                        <a href="#">
+                            <h3 class="services__caption">Structuring corporate relationships</h3>
+                        </a>
+                        <p class="services__text">Instead of just providing legal services, we will hire a lawyer or a
+                            whole
+                            team that will fit
+                            into the daily life of your company.
+                        </p>
+                    </article>
+                    <article class="services__box">
+                        <a href="#">
+                            <img src="img/icon4.svg" alt="hands">
+                        </a>
+                        <a href="#">
+                            <h3 class="services__caption">Building contractual relations</h3>
+                        </a>
+                        <p class="services__text">Once a week, or week after month, you have your own lawyer by your
+                            side.
+                            Anyone in the company
+                            can catch it at the coffee maker and just talk about current affairs instead of waiting for
+                            update status.
+                        </p>
+                    </article>
+                    <article class="services__box">
+                        <a href="#">
+                            <img src="img/icon5.svg" alt="shield">
+                        </a>
+                        <a href="#">
+                            <h3 class="services__caption">Protection of business, intellectual property</h3>
+                        </a>
+                        <p class="services__text">And all the other time he will work on new diverse projects, so he
+                            will
+                            definitely not stop in
+                            professional development. One way or another, all Axon Partners will work for you instead of
+                            a
+                            corporate lawyer.
+                        </p>
+                    </article>
+                    <article class="services__box">
+                        <a href="#">
+                            <img src="img/icon6.svg" alt="hammer">
+                        </a>
+                        <a href="#">
+                            <h3 class="services__caption">Judicial representation</h3>
+                        </a>
+                        <p class="services__text">Is it a small, medium-sized company or a market leader? Local business
+                            or
+                            multinational company?
+                            Do you have your own legal department or not?</p>
+                    </article>
+                </section>
+            </section>
+        </div>
+        <div class="shadow-first"></div>
+        <div class="shadow-second"></div>
+
+        <div class="slider center">
+            <input class="slider__input visually-hidden" type="radio" checked name="slider" id="slid-1">
+            <article class="slider__item">
+                <div class="slider__photo"><img src="img/image.jpg" alt="Alex"></div>
+                <div class="slider__content">
+                    <a class="under__link" href="services.html">
+                        команда
+                        <svg class="under__icon">
+                            <use xlink:href="img/sprite.svg#arrow-blue"></use>
+                        </svg>
+                    </a>
+                    <h2 class="under__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                        вчасну
+                        допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                    <h4 class="slider__title">Олександр Олександровський</h4>
+                    <p class="slider__desc">Керуючий партнер</p>
+                </div>
+            </article>
+            <label id="slid-1" for="slid-1" class="slider__lable"></label>
+            <input class="slider__input visually-hidden" type="radio" name="slider" id="slid-2">
+            <article class="slider__item slider__item_active">
+                <div class="slider__photo"><img src="img/image.jpg" alt="Alex"></div>
+                <div class="slider__content">
+                    <a class="under__link" href="services.html">
+                        команда
+                        <svg class="under__icon">
+                            <use xlink:href="img/sprite.svg#arrow-blue"></use>
+                        </svg>
+                    </a>
+                    <h2 class="under__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                        вчасну
+                        допомогу, навіть у ситуаціях, коли більшість безсилі.2</h2>
+                    <h4 class="slider__title">Олександр Олександровський</h4>
+                    <p class="slider__desc">Керуючий партнер</p>
+                </div>
+            </article>
+            <label id="slid-2" for="slid-2" class="slider__lable"></label>
+
+            <input class="slider__input visually-hidden" type="radio" name="slider" id="slid-3">
+            <article class="slider__item slider__item_active">
+                <div class="slider__photo"><img src="img/image.jpg" alt="Alex"></div>
+                <div class="slider__content">
+                    <a class="under__link" href="services.html">
+                        команда
+                        <svg class="under__icon">
+                            <use xlink:href="img/sprite.svg#arrow-blue"></use>
+                        </svg>
+                    </a>
+                    <h2 class="under__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                        вчасну
+                        допомогу, навіть у ситуаціях, коли більшість безсилі.3</h2>
+                    <h4 class="slider__title">Олександр Олександровський</h4>
+                    <p class="slider__desc">Керуючий партнер</p>
+                </div>
+            </article>
+            <label id="slid-3" for="slid-3" class="slider__lable"></label>
+        </div>
 
         <section class="clients">
             <h4 class="clients__title">They already trust us</h4>
@@ -295,7 +349,7 @@
         </div>
     </footer>
 
-   
+
 
 </body>
 
