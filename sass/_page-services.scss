@@ -3,27 +3,9 @@
 }
 
 .header__services-page {
-    &_nav-link {
-        position: relative;
-    }
-
-    &_nav-link::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: calc(100% + 3px);
-        width: 100%;
-        height: 2px;
-        background-color: var(--hover-color);
-        opacity: 0;
-    }
-
     &_nav-link.curent {
         color: var(--hover-color);
-    }
-
-    &_nav-link.curent::before {
-        opacity: 1;
+        text-decoration: 2px underline;
     }
 }
 
