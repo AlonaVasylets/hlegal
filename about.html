@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,221 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <header class="header header-publ center">
+        <div class="header__logo header-publ__logo header-ach__logo">
+            <a class="header__link header-publ__link" href="index.html">
+                <img src="img/logo-about.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="header__lang-adress header-publ__lang-adress">
+            <ul class="header__lang-list">
+                <li class="header__lang-item"><a class="header__lang-link header-publ__lang-link" href="#">УК</a></li>
+                <li class="header__lang-item"><a class="header__lang-link header-publ__lang-link" href="#">РУ</a></li>
+                <li class="header__lang-item"><a class="header__lang-link header-publ__lang-link" href="#">EN</a></li>
+            </ul>
+            <ul class="header__adress-list">
+                <li class="header__adress-item"><a class="header__adress-link header-publ__adress-link" href="#">Kyiv,
+                        Mechnikova str,
+                        14/1</a></li>
+                <li class="header__adress-item"><a class="header__adress-link tel header-publ__adress-link"
+                        href="tel:+0800211927">0800 211
+                        927</a></li>
+                <li class="header__adress-item"><a class="header__adress-link header-publ__adress-link" href="#"
+                        target="_blank">
+                        <svg class="header__icon header-publ__icon">
+                            <use xlink:href="img/sprite.svg#facebook-header"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+        <input id="nav-toggler" type="checkbox" class="visually-hidden">
+        <label for="nav-toggler" class="nav-toggler nav-toggler-publ">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="header__nav header-publ__nav">
+            <ul class="header__nav-list header-publ__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link curent"
+                        href="about.html">about us</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link"
+                        href="services.html">services</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link" href="team.html">team</a>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link"
+                        href="publications.html">publications</a>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link"
+                        href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="achievement">
+        <div class="achievement__desc">
+            <h2 class="achievement__title">We turn over the idea of legal services</h2>
+            <p class="achievement__text">Consolidating many years of experience and practice, the company's lawyers
+                accompany complex projects and achieve the adoption of a number of decisions that are important for the
+                industry. Many people form the practice of applying the law of the sea in Ukraine.</p>
+            <p class="achievement__text">HLEGAL is a reliable business partner, confirmed by stable cooperation with
+                international law firms, the trust of large Ukrainian and international companies, and the recognition
+                of professional ratings.</p>
+        </div>
+        <div class="achievement__hl"></div>
+        <ul class="achievement__list">
+            <li class="achievement__item">
+                <div class="achievement__item-block">
+                    <img src="img/experience.svg" alt="flag">
+                    <h3 class="achievement__list-title">10+</h3>
+                </div>
+                <p class="achievement__list-text">years of relevant experience</p>
+            </li>
+            <li>
+                <div class="achievement__item-block">
+                    <img src="img/clients.svg" alt="bag">
+                    <h3 class="achievement__list-title">30+</h3>
+                </div>
+                <p class="achievement__list-text">active clients who entrust us with their orders on a monthly basis</p>
+            </li>
+            <li>
+                <div class="achievement__item-block">
+                    <img src="img/probono.svg" alt="star">
+                    <h3 class="achievement__list-title">500+</h3>
+                </div>
+                <p class="achievement__list-text">hours of pro bono work annually</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="achievement__team">
+        <a class="achievement__team-link" href="team.html">
+            <h1 class="achievement__team-title">TEAM</h1>
+        </a>
+    </section>
+
+    <section class="achievement achievement__second">
+        <div class="achievement__desc">
+            <p class="achievement__text achievement__text-first">The historically unchanged legal profession has begun
+                to reformat in recent years. Clients are feeling this, but law firms are still resisting evolution.
+                Clients need convenience, simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove
+                that the technological revolution in legal services has begun and is imminent.</p>
+            <p class="achievement__text achievement__text-sec">Quality is what we care about the most.</p>
+            <p class="achievement__text achievement__text-three">It's simple. If you are unhappy with our work, we will
+                refund your money. We trust our clients. And we want our clients to trust us too.</p>
+        </div>
+        <h2 class="achievement__title achievement__second-title">Quality is what we care about the most.</h2>
+    </section>
+
+    <div class="slider achievement__slider center">
+        <h4 class=" achievement__slider-title">achievements</h4>
+        <input class="slider__input visually-hidden" type="radio" checked name="slider" id="slid-1">
+        <ul class="slider__item achievement__slider-item">
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/Item-a1.png"
+                        alt="Achievment-logo"></a></li>
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/item-a2.png"
+                        alt="Achievment-logo"></a></li>
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/item-a3.png"
+                        alt="Achievment-logo"></a></li>
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/item-a4.png"
+                        alt="Achievment-logo"></a></li>
+        </ul>
+        <label id="slid-1" for="slid-1" class="slider__lable"></label>
+
+        <input class="slider__input visually-hidden" type="radio" name="slider" id="slid-2">
+        <ul class="slider__item achievement__slider-item">
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/achievment-1.svg"
+                        alt="Achievment-logo"></a></li>
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/achievment-2.svg"
+                        alt="Achievment-logo"></a></li>
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/achievment-3.svg"
+                        alt="Achievment-logo"></a></li>
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/achievment-4.svg"
+                        alt="Achievment-logo"></a></li>
+        </ul>
+        <label id="slid-2" for="slid-2" class="slider__lable"></label>
+
+        <input class="slider__input visually-hidden" type="radio" name="slider" id="slid-3">
+        <ul class="slider__item achievement__slider-item">
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/achievment-1.svg"
+                        alt="Achievment-logo"></a></li>
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/achievment-2.svg"
+                        alt="Achievment-logo"></a></li>
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/achievment-3.svg"
+                        alt="Achievment-logo"></a></li>
+            <li class="slider__content achievement__slider-box"><a href="#"><img src="img/achievment-4.svg"
+                        alt="Achievment-logo"></a></li>
+        </ul>
+        <label id="slid-3" for="slid-3" class="slider__lable"></label>
+    </div>
+
+    <div class="slider achievement__slider achievement__slider-mob center">
+        <h4 class=" achievement__slider-title">achievements</h4>
+        <input class="slider__input slider__input-mob visually-hidden" type="radio" checked name="sl" id="sl-1">
+        <div class="slider__item achievement__slider-item">
+            <a href="#"><img src="img/Item-a1.png" alt="Achievment-logo"></a>
+        </div>
+        <label id="sl-1" for="sl-1" class="slider__lable"></label>
+
+        <input class="slider__input slider__input-mob visually-hidden" type="radio" name="sl" id="sl-2">
+        <div class="slider__item achievement__slider-item">
+            <a href="#"><img src="img/item-a2.png" alt="Achievment-logo"></a>
+        </div>
+        <label id="sl-2" for="sl-2" class="slider__lable"></label>
+
+        <input class="slider__input slider__input-mob visually-hidden" type="radio" name="sl" id="sl-3">
+        <div class="slider__item achievement__slider-item">
+            <a href="#"><img src="img/item-a3.png" alt="Achievment-logo"></a>
+        </div>
+        <label id="sl-3" for="sl-3" class="slider__lable"></label>
+
+        <input class="slider__input slider__input-mob visually-hidden" type="radio" name="sl" id="sl-4">
+        <div class="slider__item achievement__slider-item">
+            <a href="#"><img src="img/item-a4.png" alt="Achievment-logo"></a>
+        </div>
+        <label id="sl-4" for="sl-4" class="slider__lable"></label>
+
+        <input class="slider__input slider__input-mob visually-hidden" type="radio" name="sl" id="sl-5">
+        <div class="slider__item achievement__slider-item">
+            <a href="#"><img src="img/item-a2.png" alt="Achievment-logo"></a>
+        </div>
+        <label id="sl-5" for="sl-5" class="slider__lable"></label>
+
+        <input class="slider__input slider__input-mob visually-hidden" type="radio" name="sl" id="sl-6">
+        <div class="slider__item achievement__slider-item">
+            <a href="#"><img src="img/item-a3.png" alt="Achievment-logo"></a>
+        </div>
+        <label id="sl-6" for="sl-6" class="slider__lable"></label>
+    </div>
+
+    <footer class="footer footer__services-page center">
+        <div class="hl footer__services-page_line"></div>
+        <div class="footer__block footer__services-page_block">
+            <section class="footer__address footer__services-page_address">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link address" href="#">Kyiv, Mechnikova str, 14/1</a>
+                    </li>
+                    <li class="footer__item footer__item-map"><a class="footer__link map" href="#">On map</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link facebook" href="#" target="_blank">
+                            <svg class="footer__icon">
+                                <use xlink:href="img/sprite.svg#facebook-header"></use>
+                            </svg>
+                        </a></li>
+                    <li class="footer__item footer__item-tel"><a class="footer__link tel" href="tel:+0800211927">0800
+                            211
+                            927</a></li>
+                    <li class="footer__item footer__item-mail"><a class="footer__link mail"
+                            href="mailto:contact@forstudy.space">contact@forstudy.space</a></li>
+                </ul>
+            </section>
+            <div class="footer__services-page_text">
+                <p class="footer__desc footer__services-page_desc">© 2021 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

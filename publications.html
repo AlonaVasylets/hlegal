@@ -12,6 +12,137 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header header-publ center">
+        <div class="header__logo header-publ__logo">
+            <a class="header__link header-publ__link" href="index.html">
+                <img src="img/Logo-pub.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="header__lang-adress header-publ__lang-adress">
+            <ul class="header__lang-list">
+                <li class="header__lang-item"><a class="header__lang-link header-publ__lang-link" href="#">УК</a></li>
+                <li class="header__lang-item"><a class="header__lang-link header-publ__lang-link" href="#">РУ</a></li>
+                <li class="header__lang-item"><a class="header__lang-link header-publ__lang-link" href="#">EN</a></li>
+            </ul>
+            <ul class="header__adress-list">
+                <li class="header__adress-item"><a class="header__adress-link header-publ__adress-link" href="#">Kyiv, Mechnikova str,
+                        14/1</a></li>
+                <li class="header__adress-item"><a class="header__adress-link tel header-publ__adress-link" href="tel:+0800211927">0800 211
+                        927</a></li>
+                <li class="header__adress-item"><a class="header__adress-link header-publ__adress-link" href="#" target="_blank">
+                        <svg class="header__icon header-publ__icon">
+                            <use xlink:href="img/sprite.svg#facebook-header"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+        <input id="nav-toggler" type="checkbox" class="visually-hidden">
+        <label for="nav-toggler" class="nav-toggler nav-toggler-publ">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="header__nav header-publ__nav">
+            <ul class="header__nav-list header-publ__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link" href="about.html">about us</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link" href="services.html">services</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link" href="team.html">team</a></li>
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link curent" href="publications.html">publications</a>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link header-publ__nav-link" href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="publications page__publ center">
+            <div class="page__publ-block">
+            <div class="page__publ-switch">
+                <a href="#" class="page__publ_btn">news</a>
+                <a href="#" class="page__publ_btn">articles</a>
+            </div>
+        </div>
+            <ul class="publications__list page__publ-list">
+                <li class="publications__item">
+                    <img src="img/cover.jpg" alt="planshet">
+                    <a class="publications__link" href="#"><h4 class="publications__title page__publ-title">Equity associate</h4></a>
+                    <p class="publications__date">April 22</p>
+                    <div class="hl"></div>
+                    <p class="publications__desc">I'm a jun on projects. I am a co-owner of a law firm. How it happened.
+                        Before entering my parents told me that if I…</p>
+                </li>
+                <li class="publications__item">
+                    <img src="img/cover2.jpg" alt="planshet">
+                    <a class="publications__link" href="publ-e-p.html"><h4 class="publications__title page__publ-title">Penalty for the Good Corporation: what will happen to Google and
+                        others for violating the GDPR</h4></a>
+                    <p class="publications__date">September 29</p>
+                    <div class="hl"></div>
+                    <p class="publications__desc">And why the recovery of 50 million euros could be a fateful precedent
+                        According to Mind.ua January 21 National Commission for Data Protection.</p>
+                </li>
+                <li class="publications__item">
+                    <img src="img/cover3.jpg" alt="planshet">
+                    <a class="publications__link" href="#"><h4 class="publications__title page__publ-title">Millennial Testament</h4></a>
+                    <p class="publications__date">August 19</p>
+                    <div class="hl"></div>
+                    <p class="publications__desc">What and how modern vloggers, opinion leaders and crypto-millionaires
+                        will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…
+                    </p>
+                </li>
+                <li class="publications__item">
+                    <img src="img/Cover4.jpg" alt="planshet">
+                    <a class="publications__link" href="#"><h4 class="publications__title page__publ-title">Language Law: How to Make Your Website Relevant</h4></a>
+                    <p class="publications__date">August 19</p>
+                    <div class="hl"></div>
+                    <p class="publications__desc">Natalia Kyryk, head of content studio Wordfactory.ua First, it's beautiful! This is the number one argument in favor of the Ukrainian-language site. Secondly, it is effective. IN…
+                    </p>
+                </li>
+                <li class="publications__item">
+                    <img src="img/Cover5.jpg" alt="planshet">
+                    <a class="publications__link" href="#"><h4 class="publications__title page__publ-title">Reimbursement of the child's tuition fees in kindergarten and school</h4></a>
+                    <p class="publications__date">February 5, 2018</p>
+                    <div class="hl"></div>
+                    <p class="publications__desc">What we are talking about In June this year, the Verkhovna Rada amended the Tax Code of Ukraine. From now on, parents who receive an official…
+                    </p>
+                </li>
+                <li class="publications__item">
+                    <a class="publications__link" href="#"><h4 class="publications__title page__publ-title">Currency control is dead, long live currency control!</h4></a>
+                    <p class="publications__date">June 14, 2018</p>
+                    <div class="hl"></div>
+                    <p class="publications__desc">Experts hold conferences, round tables and other events on "liberalization of currency legislation." Lawyers-experts-novelists rub their fingers about "ctrl + c / ctrl + v".
+                    </p>
+                </li>
+            </ul>
+            <button class="page__publ_button" type="button">More publications</button>
+        </section>
+    </main>
+
+    <footer class="footer footer__services-page center">
+        <div class="hl footer__services-page_line"></div>
+        <div class="footer__block footer__services-page_block">
+            <section class="footer__address footer__services-page_address">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link address" href="#">Kyiv, Mechnikova str, 14/1</a>
+                    </li>
+                    <li class="footer__item footer__item-map"><a class="footer__link map" href="#">On map</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link facebook" href="#" target="_blank">
+                            <svg class="footer__icon">
+                                <use xlink:href="img/sprite.svg#facebook-header"></use>
+                            </svg>
+                        </a></li>
+                    <li class="footer__item footer__item-tel"><a class="footer__link tel" href="tel:+0800211927">0800
+                            211
+                            927</a></li>
+                    <li class="footer__item footer__item-mail"><a class="footer__link mail"
+                            href="mailto:contact@forstudy.space">contact@forstudy.space</a></li>
+                </ul>
+            </section>
+            <div class="footer__services-page_text">
+                <p class="footer__desc footer__services-page_desc">© 2021 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

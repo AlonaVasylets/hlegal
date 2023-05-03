@@ -1,0 +1,210 @@
+.header-publ {
+    background-color: var(--main-text-color);
+    height: 176px;
+
+    &__lang-link {
+        color: var(--title-offer-color);
+    }
+
+    &__lang-link:hover {
+        background: var(--hover-color);
+        color: var(--main-text-color);
+    }
+
+    &__lang-link:focus {
+        color: var(--main-text-color);
+    }
+
+    &__adress-link {
+        color: var(--title-offer-color);
+    }
+
+    &__icon {
+        fill: var(--title-offer-color);
+    }
+
+    &__nav-link {
+        color: var(--arrow-title-color);
+    }
+
+    &__nav-link:hover {
+        text-decoration: 2px underline var(--arrow-title-color);
+    }
+
+    &__nav-link.curent {
+        color: var(--hover-color);
+        text-decoration: 2px underline;
+    }
+}
+
+.page__publ {
+    padding-top: 176px;
+
+    &-block {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &-switch {
+        background: var(--marker-color);
+        border-radius: 12px;
+        height: 42px;
+        width: 233px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &_btn {
+        margin: 2px;
+        border-radius: 10px;
+        font-weight: 700;
+        line-height: 1.25;
+        text-decoration: none;
+        padding: 8px 30px 10px 30px;
+        color: var(--title-clients-color);
+        background: var(--main-text-color);
+    }
+
+    &_btn:hover {
+        background: var(--background-publ-color);
+    }
+
+    &_btn:focus {
+        background: var(--marker-color);
+    }
+
+    &_button {
+        font-weight: 700;
+        line-height: 1.25;
+        color: var(--main-text-color);
+        background: var(--arrow-title-color);
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        padding: 18px 30px;
+        border: none;
+        margin: 30px auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    &_button:hover,
+    &_button:focus {
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .page__publ {
+        &-title {
+            max-width: 360px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page__publ {
+        &-title {
+            max-width: 221.33px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header-publ {
+        height: 280px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25px 60px 25px;
+        align-items: flex-start;
+        gap: 30px;
+
+        &__lang-adress {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            justify-content: flex-start;
+        }
+
+        &__logo {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &__nav {
+            display: flex;
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            align-items: flex-start;
+        }
+    }
+
+    .page__publ {
+        padding-top: 280px;
+
+        &-title {
+            max-width: 249px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page__publ {
+        &-list {
+            grid-template-rows: 514px 496px 494px;
+        }
+
+        &-list li:last-child {
+            grid-column: 2 / 3;
+        }
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .page__publ {
+        &-list {
+            grid-template-columns: 1fr;
+            grid-template-rows: 432px 514px 454px 496px 494px 296px;
+        }
+
+        &-list li:last-child {
+            grid-column: 1 / 2;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .page__publ {
+        padding-top: 102px;
+    }
+
+    .header-publ {
+        height: 102px;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 25px 57px;
+        gap: 25px;
+        padding: 0;
+
+        &__lang-adress {
+            justify-content: space-between;
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+            background: var(--background-publ-color);
+        }
+
+        &__logo img {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            width: 212.95px;
+            margin: 15px 0 10px 15px;
+        }
+
+        &__nav {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+        }
+
+        .nav-toggler-publ span {
+            border: 2px solid var(--title-clients-color);
+        }
+    }
+}

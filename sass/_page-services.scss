@@ -58,6 +58,7 @@
     .footer__services-page {
         &_block {
             flex-direction: column;
+            align-items: center;
         }
 
         &_address {
@@ -86,13 +87,6 @@
         grid-template-rows: 25px 57px;
         gap: 30px;
         padding: 0;
-
-        .header__services-page {
-            &_nav-link.curent {
-                color: var(--hover-color);
-                text-decoration: none;
-            }
-        }
 
         &_lang-adress {
             justify-content: space-between;

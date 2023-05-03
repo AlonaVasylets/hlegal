@@ -16,11 +16,20 @@
         background: var(--main-text-color);
     }
 
-    &__title {
+   &__link {
+    text-decoration: none;
         font-size: 16px;
         line-height: 20px;
         color: var(--arrow-title-color);
-        margin: 30px 30px 15px 30px;
+        margin: 0;
+    }
+    &__link:hover,
+    &__link:focus {
+        color: var(--hover-color);
+    }
+    &__title {
+        margin: 30px 0 15px 30px;
+        max-width: 453px;
     }
 
     &__date {
@@ -38,6 +47,7 @@
         line-height: 1.571;
         color: var(--text-color);
         margin: 15px 30px 30px 30px;
+        max-width: 453px;
     }
 
     .hl {
